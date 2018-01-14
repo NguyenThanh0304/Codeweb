@@ -121,7 +121,12 @@
 
 <!--ÔNG NÀO LÀM BA LÔ THÌ ĐỂ VÀI TẤM HÌNH Ở ĐÂY-->
         <div class="row" style="">
-        <?php foreach ($listshoes1 as $valu): ?>
+        <?php 
+          $sql = "SELECT * FROM bag ORDER BY date DESC LIMIT 6";
+          $temp = new cSelectAllAdmin();
+          $listbag = $temp->SelectAllAdmin($sql);
+        ?>
+        <?php foreach ($listbag as $valu): ?>
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-mxs-12" >
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="../../../public/images/<?php echo $valu['image'] ?>" alt="" style="height: 200px"></a>
@@ -140,7 +145,7 @@
        <!--row 4.10-->
         <div class="row" style="padding: 10px">
           <div>
-            <p style="font-size: 22px"><b>Xem nhiều hơn các mẫu ba lô đẹp khác »<a href="balo.html"> tại đây </a>« </b></p>
+            <p style="font-size: 22px"><b>Xem nhiều hơn các mẫu ba lô đẹp khác »<a href="bag.php"> tại đây </a>« </b></p>
           </div>
         </div>    
       </div>

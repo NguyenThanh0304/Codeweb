@@ -2,7 +2,11 @@
 	class database
 	{
 		protected $con;
-		protected $row = array();		
+		protected $row = array();
+		public function bhihi()
+		{
+			echo "ahihi do cho";
+		}		
 		public function __construct()
 		{
 
@@ -30,7 +34,7 @@
 			else
 				echo "Số dòng <0";
 		}
-		public function selectDB1($con,$sql)// $row[id] = id của sản phẩm.
+		public function selectDB1($con,$sql)
 		{
 			$result = mysqli_query($con,$sql);
 			if(mysqli_num_rows($result) > 0) 
@@ -42,41 +46,19 @@
 				return $this->row;
 			}
 			else
-				echo "<p style='margin-left: 130px;font-size: 40px'>Num rows < 0</p>";
+				echo "Số dòng < 0";
 		}
 		public function insertDB($con,$sql)
 		{
 			if ($con->query($sql) === TRUE)
 			{
-			    echo "<p style='margin-left: 130px;font-size: 40px'>Add susscess</p>";
+			    echo "Thêm thành công.";
 			}
 			else
 			{
-			    echo "<p style='margin-left: 130px;font-size: 40px'>Add fail:</p>";
+			    echo "Thêm không thành công.";
 			    echo "Error: " . $sql . "<br>" . $conn->error;
 			}
-		}
-		public function updateDB($con, $sql)
-		{
-			if ($con->query($sql) === TRUE) 
-			{
-			    echo "<p style='margin-left: 130px;font-size: 40px'>Update susscess</p>";
-			} else 
-			{
-			    echo "<p style='margin-left: 130px;font-size: 40px'>Update fail: </p> " . $conn->error;
-			}
-		}
-		public function deleteDB($con, $sql)
-		{
-			if ($con->query($sql) === TRUE)
-			{
-			    echo "<span style='margin-left: 130px;font-size: 40px'>Delete susscess </span>";
-			}
-			else
-			{
-			    echo "<p style='margin-left: 130px;font-size: 40px'>Delete fail:</p>";
-			    echo "Error: " . $sql . "<br>" . $conn->error;
-			}	
 		}
 		public function getcon()
 		{

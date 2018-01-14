@@ -1,0 +1,41 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+* {
+	margin:0;
+	padding;: 0;
+	border: none;
+}
+
+body {
+
+}
+@media (min-width: 992px) {
+    body {
+        
+    }
+}
+.row {
+	width: 100%;
+}
+
+
+@font-face {
+    font-family: one;
+    src: url(../fonts/lobster/Lobster-Regular.ttf);
+}
+@font-face {
+	font-family: two;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+#fonts {
+	font-size: 18px;
+	color: black;
+}
+
+#text__footer {
+	color: white;
+	text-align: left;
+}
