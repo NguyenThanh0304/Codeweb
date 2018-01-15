@@ -68,6 +68,18 @@
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
+                                <li>
+                                    <a href="#">BAlO <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="allbag.php">Tất cả Sản Phẩm</a>
+                                        </li>
+                                        <li>
+                                            <a href="insertbag.php">Thêm Sản Phẩm</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
