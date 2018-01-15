@@ -23,7 +23,7 @@
         <div class="row" style="min-height: 100px">       
           <?php 
            include_once '../../../controllers/cSelectAllAdmin.php';
-           $sql = "SELECT * FROM shoes ORDER BY id LIMIT 6";
+           $sql = 'SELECT * FROM clothes WHERE gender="NAM" ORDER BY id LIMIT 6';
           $temp1 = new cSelectAllAdmin();
           $listshoes1 = $temp1->SelectAllAdmin($sql);
         ?>
@@ -53,7 +53,7 @@
        <!--row 4.5-->
 
 
-<!--XỬ LÝ HIỆN 6 MẪU QUẦN ÁO TRONG DATABASE RA THEO THỜI GIAN GẦN NHẤT -->
+<!--XỬ LÝ HIỆN 6 MẪU GIÀY TRONG DATABASE RA THEO THỜI GIAN GẦN NHẤT -->
 
        <?php 
           $sqlshoes = "SELECT * FROM shoes ORDER BY id DESC LIMIT 6";
