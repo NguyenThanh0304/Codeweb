@@ -46,7 +46,7 @@
         <?php endforeach; ?>
       </div>
 
-<!--Giày Nữ-->
+<!--Áo Nữ-->
       <div class="row" style="width: 100%">
         <div class="row" style="padding: 5px;background-color: black">
           <h4 style="color: white">QUẦN ÁO NỮ</h4>
